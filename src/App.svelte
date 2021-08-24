@@ -97,10 +97,10 @@
         >
           <tr>
             <td style="border-right: 2px solid #83beb1; padding-right: 80px">
-              <p
-                style="font-size: 24px; letter-spacing: 1px; color: #4c4d4e; margin: 0; font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;"
-              >
-                <strong>{first_name} {last_name}</strong>
+              <p style="font-size: 24px; color: #4c4d4e; margin: 0;">
+                <strong style="font-weight: 500"
+                  >{first_name} {last_name}</strong
+                >
               </p>
               <p
                 style="font-size: 20px; font-weight: 300; color:#83beb1; margin: 7px 0 20px 0;"
@@ -210,13 +210,10 @@
             </td>
           </tr>
         </table>
-        <hr
-          style="margin: 20px 0; border-top: thin solid #eee; border-bottom: 0; background: white;"
-        />
-        <div>
-          <button on:click={selectText}>Select Result</button>
-          <button on:click={copyHtml}>Copy HTML</button>
-        </div>
+      </div>
+      <div style="margin-top: 1em;">
+        <button on:click={selectText}>Select Result</button>
+        <button on:click={copyHtml}>Copy HTML</button>
       </div>
     </div>
   </div>
@@ -257,7 +254,7 @@
   }
 
   .result {
-    padding: 1em 2em;
+    padding: 2em 4em;
     border: 2px dashed #aaa;
     border-radius: 10px;
   }
