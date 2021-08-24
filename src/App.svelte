@@ -93,12 +93,12 @@
       <h2>Result</h2>
       <div class="result">
         <table
-          style="font-family:Arial, Helvetica, sans-serif; color: #4c4d4e;"
+          style="color: #4c4d4e; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';"
         >
           <tr>
             <td style="border-right: 2px solid #83beb1; padding-right: 80px">
               <p
-                style="font-size: 24px; letter-spacing: 1px; color: #4c4d4e; margin: 0; font-family: serif;"
+                style="font-size: 24px; letter-spacing: 1px; color: #4c4d4e; margin: 0; font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;"
               >
                 <strong>{first_name} {last_name}</strong>
               </p>
