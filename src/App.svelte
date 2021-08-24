@@ -92,23 +92,25 @@
     <div>
       <h2>Result</h2>
       <div class="result">
-        <table>
+        <table
+          style="font-family:Arial, Helvetica, sans-serif; color: #4c4d4e;"
+        >
           <tr>
             <td style="border-right: 2px solid #83beb1; padding-right: 80px">
               <p
-                style="font-size: 20px; color: #4c4d4e; margin: 0; font-family: 'Zilla Slab', 'Times New Roman', serif;"
+                style="font-size: 24px; letter-spacing: 1px; color: #4c4d4e; margin: 0; font-family: serif;"
               >
                 <strong>{first_name} {last_name}</strong>
               </p>
               <p
-                style="font-size: 20px; font-weight: 300; color:#83beb1; margin: 5px 0 20px 0;"
+                style="font-size: 20px; font-weight: 300; color:#83beb1; margin: 7px 0 20px 0;"
               >
                 {title}
               </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 78 8.05"
-                style="min-width: 200px"
+                style="width: 200px"
               >
                 <path
                   style="fill: #83beb1"
@@ -202,13 +204,15 @@
           </tr>
           <tr>
             <td col-span="2">
-              <p style="color: #4c4d4e">
+              <p style="font-size: 15px; color: #4c4d4e; margin: 5px 0;">
                 Empowering Patients to Conquer Cancer&trade;
               </p>
             </td>
           </tr>
         </table>
-        <hr />
+        <hr
+          style="margin: 20px 0; border-top: thin solid #eee; border-bottom: 0; background: white;"
+        />
         <div>
           <button on:click={selectText}>Select Result</button>
           <button on:click={copyHtml}>Copy HTML</button>
