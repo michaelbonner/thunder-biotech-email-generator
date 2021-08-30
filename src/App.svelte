@@ -204,9 +204,7 @@
           </tr>
           <tr>
             <td colspan="2">
-              <p
-                style="font-size: 13px; color: #4c4d4e; margin: 5px 0; margin-top: 8px;"
-              >
+              <p style="font-size: 13px; color: #4c4d4e; margin: 10px 0;">
                 Empowering Patients to Conquer Cancer&trade;
               </p>
             </td>
