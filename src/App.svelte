@@ -34,9 +34,9 @@
           "HTML copied to clipboard. You can paste it whereever you would like.",
           {
             theme: {
-              "--toastBackground": "green",
+              "--toastBackground": "#10B981",
               "--toastColor": "white",
-              "--toastProgressBackground": "darkgreen",
+              "--toastProgressBackground": "#047857",
             },
           }
         );
@@ -46,9 +46,9 @@
           "There was an error copying the HTML to your clipboard. Either view the source on this page, or copy the section of the page above manually.",
           {
             theme: {
-              "--toastBackground": "red",
+              "--toastBackground": "#EF4444",
               "--toastColor": "white",
-              "--toastProgressBackground": "darkred",
+              "--toastProgressBackground": "#B91C1C",
             },
           }
         );
@@ -203,8 +203,10 @@
             </td>
           </tr>
           <tr>
-            <td col-span="2">
-              <p style="font-size: 15px; color: #4c4d4e; margin: 5px 0;">
+            <td colspan="2">
+              <p
+                style="font-size: 13px; color: #4c4d4e; margin: 5px 0; margin-top: 8px;"
+              >
                 Empowering Patients to Conquer Cancer&trade;
               </p>
             </td>
@@ -221,27 +223,63 @@
 
 <style>
   main {
+    box-sizing: border-box;
     padding: 1em;
-    max-width: 240px;
+    width: 100vw;
+    max-width: 100vw;
     margin: 0 auto;
     color: #4c4d4e;
+    overflow-x: scroll;
   }
 
-  .container {
-    display: flex;
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+    }
   }
 
   h1 {
     color: #83beb1;
     font-size: 4em;
     font-weight: 100;
+    margin-bottom: 1em;
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 1em;
   }
 
   form {
     padding: 1em;
-    background: #fafafa;
+    background: #f3f4f6;
     display: inline-block;
-    margin-right: 2em;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 768px) {
+    form {
+      margin-right: 2em;
+    }
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    form input {
+      width: auto;
+    }
   }
 
   form > div {
@@ -249,14 +287,22 @@
     justify-content: space-between;
   }
 
+  @media (max-width: 767px) {
+    form > div {
+      display: block;
+      justify-content: space-between;
+    }
+  }
+
   form > div > label {
     padding-right: 2em;
   }
 
   .result {
-    padding: 2em 4em;
+    padding: 2em 3em;
     border: 2px dashed #aaa;
     border-radius: 10px;
+    overflow-x: scroll;
   }
   @media (min-width: 640px) {
     main {
